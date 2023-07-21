@@ -1,0 +1,49 @@
+def sum(x,y):
+    print(x+y)
+
+def substraction(x,y):
+    print(x-y)
+
+def multiplication (x,y):
+    print(x*y)
+    
+def dividing (x,y):
+    print(x/y)   
+def even_odd (e):
+    if e%2 ==0:
+        print("number is even")
+    else :
+        print("number is odd")
+def factorial(e):
+    if e==1 or e==0:
+        return 1
+    else:
+        return e*factorial(e-1)
+    
+print("Hello to Calculator")
+print("for two number -->t , for one number -->o ")
+c = input("Choose: ")
+
+if c == "t" or c=="T":
+    x=float(input("Enter the First Number: ")) 
+    y=float(input("Enter the Second Number: "))
+    print("Choose Process by writing , sum-->1 ,subtraction-->2, multiplication-->3, dividing-->4")
+    z = input ("Enter process type: ")
+    if z == "1": 
+         sum(x,y)
+    elif z == "2":
+         substraction (x,y)
+    elif z =="3":
+        multiplication(x,y)
+    elif z =="4":
+        dividing(x,y)
+elif c == "o" or c=="O":
+            g= input("Enter e/o to determine number type or f for factorial ")
+            
+            if g=="e/o" or g=="e/O" or g=="E/o" or g=="E/O": 
+                   e=float(input("Enter the Number: ")) 
+                   even_odd (e)
+            elif g== "f" or g=="F":
+                   e=float(input("Enter the Number: "))
+                   print(factorial(e))
+    
